@@ -1,7 +1,11 @@
-
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
 
 body {
-    background-color: white;
+    background: #f5f6f7;
     color: black;
     font-family: Helvetica;
     margin: 0;
@@ -21,6 +25,7 @@ header {
     justify-content: space-between;
     background-color: black;
     color: white;
+    position: fixed;
 }
 
 h1 {
@@ -61,4 +66,113 @@ nav > ul > li:hover {
 li a {
     text-decoration: none;
     color: inherit;
+}
+
+main {
+    padding-top: 50px;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+}
+
+h1, h2 {
+    font-family: Verdana, Tahoma;
+}
+
+h2 {
+    border-bottom: 4px solid silver;
+    margin: 0;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+
+.info {
+    padding: 10px 0 0 5px;
+}
+
+.info label, .info input {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input {
+    font-size: 16px;
+}
+
+.info input {
+    width: 50%;
+    text-align: left;
+}
+
+.info label {
+    width: 10%;
+    min-width: 55px;
+    text-align: right;
+}
+
+.question-block {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;
+    margin-bottom: 3px;
+}
+
+p {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+p::before {
+    content: "Question #";
+}
+
+.question {
+    border: none;
+    padding-bottom: 0;
+}
+
+.answers-list {
+    list-style: none;
+    padding: 0;
+}
+
+.formrow {
+    margin-top: 30px;
+    padding: 0px 15px;
+}
+
+button {
+    display: block;
+    margin: 40px auto;
+    width: 40%;
+    font-size: 23px;
+    padding: 15px;
+    background-color: rgb(227, 224, 224);
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer, footer a {
+    color: #dfdfe2;
+}
+
+address {
+    text-align: center;
+    padding: 0.3rem;
+}
+
+select {
+    width: 50%;
+    font-size: 16px;
 }
