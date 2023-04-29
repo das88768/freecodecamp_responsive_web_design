@@ -30,11 +30,6 @@ header {
     margin: 0px;
 }
 
-#main-doc {
-    position: absolute;
-    margin: 310px;
-}
-
 #navbar ul {
     height: 88%;
     padding: 0;
@@ -55,4 +50,20 @@ header {
     color: #4d4e53;
     text-decoration: none;
     padding: 10px 30px;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    margin-bottom: 110px;
+}
+
+section article {
+    color: #4d4e53;
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+section li {
+    margin: 15px 0 0 20px;
 }
